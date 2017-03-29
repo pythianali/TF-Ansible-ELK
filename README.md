@@ -3,13 +3,13 @@
 Note this stack is a continual work in progress and capabilities will change over time
 
 ## Table of Contents
-* [Overview](## Overview)
-* [Requirements](## Requirements)
-* [Notes about build environment](## Notes about build environment)
-* [Terraform.py](## Terraform.py submodule)
-* [Initialization Steps](## Initialization Steps)
-* [Launching the Stack](## Launching the Stack)
-* [Destroying the Stack](## Destroying the Stack)
+* [Overview](Overview)
+* [Requirements](Requirements)
+* [Notes about build environment](Notes about build environment)
+* [Terraform.py submodule](Terraform.py submodule)
+* [Initialization Steps](Initialization Steps)
+* [Launching the Stack](Launching the Stack)
+* [Destroying the Stack](Destroying the Stack)
 
 ## Overview
 
@@ -32,7 +32,7 @@ The stack consists of the following components:
 * Ubuntu 16.04 AMI.  More options to follow later
 * Ability to run t2small instances. There are issues with memory with the t2micro instances
 * [AWSCLI](https://aws.amazon.com/cli/) installed locally and properly configured
-* [Python])(https://www.python.org/) installed locally
+* [Python](https://www.python.org/) installed locally
 * [Ansible](http://docs.ansible.com/ansible/intro_installation.html) installed locally.  
 * [Terraform](https://www.terraform.io/intro/getting-started/install.html) installed locally.
 
