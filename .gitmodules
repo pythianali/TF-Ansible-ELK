@@ -1,0 +1,6 @@
+[submodule "ansible/ansible-elasticsearch"]
+	path = ansible/ansible-elasticsearch
+	url = https://github.com/elastic/ansible-elasticsearch.git
+[submodule "terraform.py"]
+	path = terraform.py
+	url = https://github.com/CiscoCloud/terraform.py.git
