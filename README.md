@@ -3,13 +3,13 @@
 Note this stack is a continual work in progress and capabilities will change over time
 
 ## Table of Contents
-* [Overview](TF-Ansible-ELK#overview)
+* [Overview](https://github.com/pythianali/TF-Ansible-ELK#overview)
 * [Requirements](https://github.com/pythianali/TF-Ansible-ELK#requirements)
 * [Notes about build environment](https://github.com/pythianali/TF-Ansible-ELK#notes-about-build-environment)
-* [Terraform.py submodule](Terraform.py submodule)
-* [Initialization Steps](Initialization Steps)
-* [Launching the Stack](Launching the Stack)
-* [Destroying the Stack](Destroying the Stack)
+* [Terraform.py submodule](https://github.com/pythianali/TF-Ansible-ELK#terraformpy-submodule)
+* [Initialization Steps](https://github.com/pythianali/TF-Ansible-ELK#initialization-steps)
+* [Launching the Stack](https://github.com/pythianali/TF-Ansible-ELK#launching-the-stack)
+* [Destroying the Stack](https://github.com/pythianali/TF-Ansible-ELK#destroying-the-stack)
 
 ## Overview
 
@@ -49,7 +49,7 @@ The following versions of tools and OS were used to initially develop this stack
 
 [Terraform.py](https://github.com/ciscocloud/terraform.py) is a neat submodule that we use to dynamically create an EC2 inventory for ansible to use in place of its inventory file.  It can be run at the CLI and will return IP and hostname values for the running environment.
 
-## Setup Steps
+## Initialization Steps
 
 Grab the repository
 ```
