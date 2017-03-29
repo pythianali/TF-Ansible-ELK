@@ -3,9 +3,9 @@
 Note this stack is a continual work in progress and capabilities will change over time
 
 ## Table of Contents
-* [Overview](Overview)
-* [Requirements](Requirements)
-* [Notes about build environment](Notes about build environment)
+* [Overview](TF-Ansible-ELK#overview)
+* [Requirements](https://github.com/pythianali/TF-Ansible-ELK#requirements)
+* [Notes about build environment](https://github.com/pythianali/TF-Ansible-ELK#notes-about-build-environment)
 * [Terraform.py submodule](Terraform.py submodule)
 * [Initialization Steps](Initialization Steps)
 * [Launching the Stack](Launching the Stack)
