@@ -60,7 +60,7 @@ Grab the submodules
 cd MyProjectFolder
 git submodule update --init --recursive --remote
 ```
-Create a credentials file.  Update values accordingly for AWS keys
+Create a credentials file.  Update values accordingly for AWS keys.  In this case creds.tf was used.
 ```
 
 variable "AWS_ACCESS_KEY" {
