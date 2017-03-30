@@ -91,7 +91,7 @@ resource "aws_instance" "Elasticsearch" {
   }
 
   provisioner "local-exec" {
-     command = "ansible-playbook ansible/playbooks/elasticsearch.yaml -u ${var.INSTANCE_USERNAME} --private-key ${var.LOCAL_KEY_NAME} -i terraform.py/terraform.py"
+     command = "ansible-playbook ansible/playbooks/elasticsearch.yaml --ssh-common-args='-o StrictHostKeyChecking=no'  -u ${var.INSTANCE_USERNAME} --private-key ${var.LOCAL_KEY_NAME} -i terraform.py/terraform.py"
   }
 
   connection {

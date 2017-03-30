@@ -9,8 +9,8 @@
         node.name: "node1",
         cluster.name: "TF-Ansible-ELK-cluster",
         discovery.zen.ping.unicast.hosts: "localhost:9301",
-        http.port: 9201,
-        transport.tcp.port: 9301,
+        http.port: 9200,
+        transport.tcp.port: 9300,
         node.data: false,
         node.master: true,
         bootstrap.memory_lock: true,
@@ -20,4 +20,4 @@
     es_scripts: false
     es_templates: false
     es_version_lock: false
-    es_heap_size: 1g
+    es_heap_size: 256m
