@@ -6,6 +6,7 @@ Note this stack is a continual work in progress and capabilities will change ove
 * [Overview](https://github.com/pythianali/TF-Ansible-ELK#overview)
 * [Requirements](https://github.com/pythianali/TF-Ansible-ELK#requirements)
 * [Notes about build environment](https://github.com/pythianali/TF-Ansible-ELK#notes-about-build-environment)
+* [Ansible Configuration](https://github.com/pythianali/TF-Ansible-ELK#ansible-configuration)
 * [Terraform.py submodule](https://github.com/pythianali/TF-Ansible-ELK#terraformpy-submodule)
 * [Initialization Steps](https://github.com/pythianali/TF-Ansible-ELK#initialization-steps)
 * [Launching the Stack](https://github.com/pythianali/TF-Ansible-ELK#launching-the-stack)
@@ -30,7 +31,6 @@ The stack consists of the following components:
 
 * Access to an [AWS](https://aws.amazon.com/) account
 * Ubuntu 16.04 AMI.  More options to follow later
-* Ability to run t2small instances. There are issues with memory with the t2micro instances
 * [AWSCLI](https://aws.amazon.com/cli/) installed locally and properly configured
 * [Python](https://www.python.org/) installed locally
 * [Ansible](http://docs.ansible.com/ansible/intro_installation.html) installed locally.  
@@ -44,6 +44,18 @@ The following versions of tools and OS were used to initially develop this stack
 * Ansible 2.2.1.0
 * Python 2.7.13
 * awscli 1.11.21
+
+## Ansible Configuration
+
+Currently testing these options in /etc/ansible/ansible.cfg for a reliable fact store.  See [This](https://docs.ansible.com/ansible/playbooks_variables.html#fact-caching) for details on how this works.
+```
+gathering = smart
+fact_caching = jsonfile
+fact_caching_connection = /tmp/
+fact_caching_timeout = 86400
+
+```
+
 
 ## Terraform.py submodule
 
