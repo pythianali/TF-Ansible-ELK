@@ -17,10 +17,16 @@ resource "aws_instance" "Logstash" {
     Name = "Logstash-TF-Ansible-ELK"
     AccountID = "${data.aws_caller_identity.current.account_id}"
   }
+
   provisioner "remote-exec" {
      inline = [
-       "sudo apt-get install python -y",
+       "sudo apt-get update",
+       "sudo apt-get install python python-apt python-pip python-pycurl openjdk-8-jdk-headless -y",
      ]
+  }
+
+  provisioner "local-exec" {
+     command = "ansible-playbook ansible/playbooks/logstash.yaml --ssh-common-args='-o StrictHostKeyChecking=no'  -u ${var.INSTANCE_USERNAME} --private-key ${var.LOCAL_KEY_NAME} -i terraform.py/terraform.py"
   }
 
   connection {

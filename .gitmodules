@@ -4,3 +4,6 @@
 [submodule "terraform.py"]
 	path = terraform.py
 	url = https://github.com/CiscoCloud/terraform.py.git
+[submodule "ansible/ansible-logstash"]
+	path = ansible/ansible-logstash
+	url = https://github.com/geerlingguy/ansible-role-logstash.git

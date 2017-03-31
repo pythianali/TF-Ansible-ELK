@@ -1,0 +1,7 @@
+---
+- name: Logstash
+  hosts: Logstash*
+  become: yes
+  roles:
+    - {role: logstash, logstash_elasticsearch_hosts: "{{ hostvars['Elasticsearch-TF-Ansible-ELK']['ansible_hostname'] }}"}
+    

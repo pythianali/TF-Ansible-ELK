@@ -15,6 +15,7 @@ resource "aws_security_group" "TF-Ansible-ELK-SG" {
       protocol = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
   } 
+
   tags {
     Name = "TF-Ansible-ELK-SG"
     AccountID = "${data.aws_caller_identity.current.account_id}"
